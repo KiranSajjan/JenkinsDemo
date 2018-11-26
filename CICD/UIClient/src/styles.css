@@ -1,0 +1,251 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    
+    src: url('/node-modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('/node-modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+    url('/node-modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+    url('/node-modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url('/node-modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url('/node-modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    }
+body {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .row{
+      margin: 0;
+  }
+  .panel.card.panel-default{
+    margin-bottom: 20px;
+}
+.card-header {
+    padding: 10px;
+}
+.panel-heading.card-header{
+    background-color: #337ab7;
+
+}
+.accordionHeading{
+    color:#fff;
+}
+/* .menuItems1 .accordionHeading{
+    color: #333333;
+}
+.menuItems1 .panel-heading.card-header{
+    background-color: #fff;
+    padding: 0;
+    cursor: pointer;
+} */
+.sidebar .panel.card.panel-default{
+    margin-bottom: 0;
+}
+.sidebar .panel-heading.card-header{
+    background-color: #fff;
+    cursor: pointer;
+}
+.sidebar .accordionHeading{
+    font-weight: 500;
+    color: #044f7c;
+    padding: 10px 0;
+}
+.menuItems1 .panel-heading.card-header .accordionHeading{
+    padding: 20px 10px;
+}
+.menuActive .panel-heading.card-header{
+    text-shadow: rgba(0,0,0,.25) 0 -1px 0;
+    background: linear-gradient(#fdfdfd,#e4e4e4),#2A3F54;
+    box-shadow: rgba(0,0,0,.25) 0 1px 0, inset rgba(255,255,255,.16) 0 1px 0;
+}
+.panel-heading.card-header{
+    border-bottom: 1px solid #e4e4e4;
+}
+.menuActive{
+    border-right: 2px solid #0365b1;
+}
+.switch-medium small {
+    width: 18px !important;
+    height: 18px !important;
+}
+.switch-medium {
+    width: 35px !important;
+    height: 18px !important;
+    border-radius: 18px !important;
+    margin-right: 10px !important;
+    margin-bottom: -5px !important;
+}
+label{
+    font-weight: bold;
+}
+select,input[type=number]{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 4px;
+    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+.unitselect{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding: 6px 4px 7px;
+    width: 80px;
+}
+.inputs{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: none !important;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.selectInputWidth{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.selectInputWidth > label{
+    margin-bottom: 0;
+}
+.fullWidth{
+    width: 100%;
+}
+.radioInput{
+    position: relative;
+    top: 1px;
+}
+.flex-strech{
+    justify-content: space-between;
+}
+.inputBorderRight{
+    border-right: 1px solid #ccc !important;
+    border-top-right-radius: 5 !important;
+    border-bottom-right-radius: 5 !important;
+}
+.glyphicon{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-triangle-top:before{
+    content:"\f106";
+}
+.glyphicon-triangle-bottom:before{
+    content:"\f107";
+}
+.text-nowrap{
+    font-size: 10px
+}
+.table.table-striped{
+    table-layout: fixed;
+}
+.imageDiv{
+    border: 1px solid #337ab7;
+    height: 100%;
+    width: 100%;
+}
+.imageDiv>h1{
+    border-bottom: 1px solid #337ab7;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.geometricImage > img{
+    margin: 0 auto;
+}
+.colMargin{
+    margin-bottom: 10px;
+}
+.geoTable{
+    margin: 20px auto 0px;
+    border-collapse: collapse;
+    border-style: none;
+    width: 100%;
+}
+.geoTable td {
+    border: 1px solid #ddd;
+    padding: 5px 25px;
+}
+.togglesidebarMenu .panel-heading.card-header{
+    position: relative;
+}
+.togglesidebarMenu .sidebar .accordionHeading{
+    font-size: 9px !important;
+    text-align: center;
+}
+.togglesidebarMenu .accordionHeading i{
+    margin: 0;
+    display: block;
+    margin-bottom: 10px;
+}
+.togglesidebarMenu .fa.fa-angle-down.fa-rotate-180,.togglesidebarMenu .fa.fa-angle-down{
+    display: none;
+}
+.togglesidebarMenu .panel-collapse.collapse.in.show{
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    left: 70px;
+}
+.togglesidebarMenu .panel-body.card-block.card-body{
+    padding: 10px;
+    width: 130px;
+}
+.togglesidebarMenu .switch-medium {
+    width: 25px !important;
+    height: 12px !important;
+    border-radius: 6px !important;
+    margin-right: 6px !important;
+    margin-bottom: -3px !important;
+}
+.togglesidebarMenu .switch-medium small {
+    width: 12px !important;
+    height: 12px !important;
+}
+.techClass .panel-body.card-block.card-body{
+    padding: 0;
+}
+.paddRight{
+    padding-right: 0;
+}
+.paddLeft{
+    padding-left: 0;
+}
+.paddZero{
+    padding: 0;
+}
+.rowMargin{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:991px){
+    .secpaddLeft{
+        padding-left: 0;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .selectInputWidth > label,.selectInputWidth > select{
+        font-size: 10px;
+    }
+    .unitselect{
+        width: 50px;
+    }
+    .imageDiv>h1{
+        font-size: 14px;
+    }
+    .selectInputWidth{
+        flex-wrap: nowrap;
+    }
+    select, input[type=number]{
+        width: inherit;
+        margin-bottom: 0;
+    }
+    .unitselect {
+        width: 45px;
+        padding: 9px 0 8px;
+    }
+
+}

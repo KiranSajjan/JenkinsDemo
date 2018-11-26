@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.VSSDK.BuildTools.15.9.3032\build\Microsoft.VSSDK.BuildTools.props" Condition="Exists('..\packages\Microsoft.VSSDK.BuildTools.15.9.3032\build\Microsoft.VSSDK.BuildTools.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -244,6 +246,27 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="UIClient\e2e\protractor.conf.js" />
+    <Content Include="UIClient\src\app\app.component.css" />
+    <Content Include="UIClient\src\app\app.component.html" />
+    <Content Include="UIClient\src\assets\images\cac.png" />
+    <Content Include="UIClient\src\assets\images\favicon.ico" />
+    <Content Include="UIClient\src\assets\images\fin.png" />
+    <Content Include="UIClient\src\assets\images\flowpasses.png" />
+    <Content Include="UIClient\src\assets\images\headert0headerforlcac.png" />
+    <Content Include="UIClient\src\assets\images\hp-lcac.png" />
+    <Content Include="UIClient\src\assets\images\lcac.png" />
+    <Content Include="UIClient\src\assets\images\lcoc.png" />
+    <Content Include="UIClient\src\assets\images\modine-logo.png" />
+    <Content Include="UIClient\src\assets\images\oc.png" />
+    <Content Include="UIClient\src\assets\images\p-lcac.png" />
+    <Content Include="UIClient\src\assets\images\platelength.png" />
+    <Content Include="UIClient\src\assets\images\rad.png" />
+    <Content Include="UIClient\src\assets\images\tube.png" />
+    <Content Include="UIClient\src\assets\images\wt-lcac.PNG" />
+    <Content Include="UIClient\src\index.html" />
+    <Content Include="UIClient\src\karma.conf.js" />
+    <Content Include="UIClient\src\styles.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -258,6 +281,18 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="UIClient\angular.json" />
+    <Content Include="UIClient\package-lock.json" />
+    <Content Include="UIClient\package.json" />
+    <Content Include="UIClient\README.md" />
+    <Content Include="UIClient\tsconfig.json" />
+    <Content Include="UIClient\tslint.json" />
+    <Content Include="UIClient\e2e\tsconfig.e2e.json" />
+    <Content Include="UIClient\src\assets\.gitkeep" />
+    <Content Include="UIClient\src\browserslist" />
+    <Content Include="UIClient\src\tsconfig.app.json" />
+    <Content Include="UIClient\src\tsconfig.spec.json" />
+    <Content Include="UIClient\src\tslint.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -296,11 +331,28 @@
     <Analyzer Include="..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.33\analyzers\cs\Microsoft.VisualStudio.SDK.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.8.122\analyzers\cs\Microsoft.VisualStudio.Threading.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="UIClient\e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="UIClient\e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="UIClient\src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="UIClient\src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="UIClient\src\app\app.component.ts" />
+    <TypeScriptCompile Include="UIClient\src\app\app.module.ts" />
+    <TypeScriptCompile Include="UIClient\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="UIClient\src\environments\environment.ts" />
+    <TypeScriptCompile Include="UIClient\src\main.ts" />
+    <TypeScriptCompile Include="UIClient\src\polyfills.ts" />
+    <TypeScriptCompile Include="UIClient\src\test.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">

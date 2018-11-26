@@ -1,0 +1,29 @@
+.headerComp{
+    width: 100%;
+}
+.MainContent{
+    width: calc(100% - 230px);
+}
+.toggleMainContent{
+    width: calc(100% - 70px);
+}
+.routerDiv{
+    background-color: #F7F7F7;
+    padding: 10px 20px 0;
+}
+.calButton{
+    background-color: #337ab7;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 10px;
+    color: #fff;
+}
+
+@media screen and (max-width:767px){
+.MainContent{
+    width: calc(100% - 70px);
+}
+.toggleMainContent{
+    width: 100%;
+}
+}
